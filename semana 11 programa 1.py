@@ -6,7 +6,7 @@ matriz = [
 ]
 
 no_fila = 0
-busqueda = 6
+busqueda = 9
 
 for fila in matriz:
     no_columna = 0
