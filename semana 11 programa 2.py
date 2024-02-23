@@ -6,7 +6,8 @@ matriz = [
 ]
 
 for fila in matriz:
-    print(fila)
-    fila.sort()
-    print(fila)
+    #print(fila)
+    #fila.sort(reverse=True)
+    #print(fila)
+    print(sorted(fila))
 
