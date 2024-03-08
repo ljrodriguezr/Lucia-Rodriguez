@@ -119,9 +119,8 @@ temperaturas = [
         ]
     ]
 ]
-def calcular_promedio(divisor, dividendo):
-    promedio = round(divisor / dividendo, 2)
-    return promedio
+def calcular_promedio(suma_acumulada, total_acumulado):
+    return round(suma_acumulada / total_acumulado, 2)
 
 # Calcular el promedio de temperaturas para cada ciudad y semana
 no_ciudad = 0
@@ -138,5 +137,5 @@ for ciudad in temperaturas:
         promedio = calcular_promedio(suma, len(semana))
         suma_promedio += promedio
         print(f'El promedio semana No. {no_semana} es: {promedio}')
-    promedio_ciudad = round(suma_promedio / len(ciudad), 1)
+    promedio_ciudad = calcular_promedio(suma_promedio, len(ciudad) )
     print(f'El promedio mensual es: {promedio_ciudad}')
